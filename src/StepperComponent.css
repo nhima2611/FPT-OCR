@@ -1,0 +1,82 @@
+.stepper-container {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .stepper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .step-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    border: 2px solid #898C8F;
+    color:#898C8F ;
+    font-size: 16px;
+  }
+  
+  .step-label {
+    position: absolute;
+    right: 85px;
+  }
+
+  .step.active .step-label {
+    color: red;
+  }
+  .step.completed .step-label {
+    color: #85ADFF;
+  }
+  
+  .connector {
+    height: 30px;
+    width: 2px;
+    background-color: #898C8F;
+  }
+  .step.active .connector {
+    background-color: #3377FF;
+  }
+  
+  .step.active .step-circle {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  .step.completed .step-circle {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
